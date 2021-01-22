@@ -1,0 +1,7 @@
+.chosenPost{
+  border: 2px solid red;
+  background: lightblue;
+  padding: 0;
+  font-size: 25px;
+  font-family: cursive;
+}

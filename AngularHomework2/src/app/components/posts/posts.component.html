@@ -1,0 +1,9 @@
+<app-post *ngFor="let post of posts" [post]="post" (userUp)="getChosenPost($event)"></app-post>
+<hr>
+<div class="chosenPost" *ngIf="chosenPost">
+  <div><strong>userId : </strong>{{chosenPost?.userId}}</div>
+  <div><strong>id : </strong>{{chosenPost?.id}}</div>
+  <div><strong>title : </strong>{{chosenPost?.title}}</div>
+  <div><strong>body : </strong>{{chosenPost?.body}}</div>
+</div>
+
