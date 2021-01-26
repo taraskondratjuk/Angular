@@ -1,0 +1,12 @@
+.routs{
+  display: flex;
+  justify-content: space-around;
+  background: lightblue;
+  color: crimson;
+  font-family: cursive;
+  font-size: 50px;
+}
+
+.cars{
+  background: grey;
+}
