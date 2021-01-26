@@ -1,0 +1,13 @@
+<div  *ngFor="let car of cars" >
+
+  <div *ngIf="findCarId==car.id" class="fullCar">
+    <strong>Model : </strong>{{car.model}},
+    <strong>Color : </strong>{{car.color}},
+    <strong>Year : </strong>{{car.year}},
+    <strong>Power : </strong>{{car.power}},
+    <strong>Price : </strong>{{car.price}},
+  </div>
+
+</div>
+
+
