@@ -1,0 +1,20 @@
+<hr>
+<div class="fullUser" *ngIf="fullUser">
+  <p><strong>id : </strong>{{fullUser.id}}</p>
+  <p><strong>name : </strong>{{fullUser.name}}</p>
+  <p><strong>userName : </strong>{{fullUser.username}}</p>
+  <p><strong>address : </strong></p>
+  <ul>
+    <li><strong>city : </strong>{{fullUser.address.city}}</li>
+    <li><strong>street : </strong>{{fullUser.address.street}}</li>
+    <li><strong>suite : </strong>{{fullUser.address.suite}}</li>
+    <li><strong>zipCode : </strong>{{fullUser.address.zipcode}}</li>
+  </ul>
+  <p><strong>location : </strong></p>
+  <ul>
+    <li><strong>lat : </strong>{{fullUser.address.geo.lat}}</li>
+    <li><strong>lng : </strong>{{fullUser.address.geo.lng}}</li>
+  </ul>
+
+
+</div>

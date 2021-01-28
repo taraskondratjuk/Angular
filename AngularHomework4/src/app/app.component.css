@@ -1,0 +1,12 @@
+.routes {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 55px;
+  border: 1px solid grey;
+  background: darkcyan;
+  color: #000000;
+  border-radius: 5px;
+}
+
