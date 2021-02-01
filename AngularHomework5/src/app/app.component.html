@@ -1,0 +1,39 @@
+<div class="form">
+
+  <form [formGroup]="myForm" (ngSubmit)="formAction()">
+
+    <label>
+      Введіть ім'я :
+      <input type="text" [formControl]="name" [defaultValue]=" " placeholder="Ваше ім'я...">
+    </label>
+
+
+    <label>
+      Введіть вік :
+      <input type="number" [formControl]="age" [defaultValue]=" " placeholder="Ваш вік...">
+    </label>
+
+    <button [disabled]="myForm.invalid">Save user</button>
+
+
+  </form>
+
+  <div class="warning" *ngIf="myForm.controls.name.invalid">
+    <span>Поле "Ім'я" має містити від 3-х до 12 символів</span>
+  </div>
+
+  <div class="warning" *ngIf="myForm.controls.age.invalid">
+    <span>Ви маєте ввести вік від 1 до 120</span>
+  </div>
+
+</div>
+
+
+<div *ngIf="users" class="user">
+  <div *ngFor="let user of users">
+    <strong>Name :</strong> {{user.name}},
+    <strong>age :</strong> {{user.age}}
+  </div>
+
+</div>
+
