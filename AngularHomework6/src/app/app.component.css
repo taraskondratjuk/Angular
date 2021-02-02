@@ -1,0 +1,8 @@
+.routes {
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 50px;
+  background: lightblue;
+  font-family: "Comic Sans MS",cursive;
+}
